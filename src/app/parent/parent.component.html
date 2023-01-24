@@ -1,0 +1,5 @@
+<p>parent works!</p>
+<input type="text" [(ngModel)]="name">
+{{name}}
+<app-child [name]="name"  (msgChanged)="dataRecieved($event)"></app-child>
+recived form child: {{message}}
